@@ -1,14 +1,14 @@
-nombre = input("Ingrese su nombre: ")
+nombre = input("Ingresa tu nombre: ").strip()
 
 while True:
     try:
-        edad = int(input("Ingrese su edad: "))
+        edad = int(input("Ingresa tu edad: "))
         break
     except ValueError:
-        print("Porfa, ingresa tu edad en números.")
-        
-if edad < 18:
-    print(f"wenas, {nombre}! Eres menor de edad, disfruta tu juventud.")
+        print("Porfis, coloca tu edad en números.")
 
-elif edad >= 18:  # Se usa elif en lugar de otro if, si no se usa imprimiria los dos mensajes.
-    print(f"Wenas, {nombre}! ¿Como que tienes {edad} años? Jaja.")
+if edad < 18:
+    print(f"Wenas, {nombre} eres menor de edad, disfrutaaa.")
+else:
+    print(f"Wenas, {nombre} Cómo que tienes {edad} años? Jaja.")
+
